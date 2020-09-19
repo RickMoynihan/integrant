@@ -1,6 +1,6 @@
-# Integrant
+# Integrant (Experimental Babashka Compatible Fork)
 
-[![Build Status](https://travis-ci.org/weavejester/integrant.svg?branch=master)](https://travis-ci.org/weavejester/integrant)
+A fork of Integrant, that works with [babashka](https://github.com/borkdude/babashka)
 
 > integrant /ˈɪntɪɡr(ə)nt/
 >
@@ -41,11 +41,12 @@ initialized into a system.
 
 ## Installation
 
-To use the latest release, add the following to your project
-`:dependencies`:
+To use the latest release, add the following `:deps` to your project
+`deps.edn`:
 
-    [integrant "0.8.0"]
-
+    {:deps {rickmoynihan/integrant {:local/root "/Users/rick/repos/3rdparty/integrant"
+                                    :git/url "https://github.com/RickMoynihan/integrant.git"
+                                    :sha "afc95981b5cb2b83d344da1bf77b4003eb72726b"}}}
 ## Presentations
 
 * [Enter Integrant](https://skillsmatter.com/skillscasts/9820-enter-integrant)
