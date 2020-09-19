@@ -189,10 +189,15 @@
        (mapcat keyword->namespaces k)
        (keyword->namespaces k))))
 
-#?(:clj
+#?(:bb
    (defn- try-require [sym]
      (try (do (require sym) sym)
-          (catch java.io.FileNotFoundException _))))
+          (catch Throwable _)))
+   :clj
+   (defn- try-require [sym]
+     (try (do (require sym) sym)
+          (catch java.io.FileNotFoundException _)))
+   )
 
 #?(:clj
    (defn load-namespaces
