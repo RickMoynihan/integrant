@@ -1,5 +1,6 @@
 {:paths   ["src"]
  :deps    {org.clojure/clojure    {:mvn/version "1.9.0"}
-           weavejester/dependency {:mvn/version "0.2.1"}}
+           rickmoynihan/dependency {:git/url "https://github.com/RickMoynihan/dependency.git"
+                                    :sha "6525916b513d4f97649ac372a49677c8384be900"}}
  :aliases {:dev  {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.597"}}}
            :test {:extra-paths ["test"]}}}
