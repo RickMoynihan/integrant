@@ -4,7 +4,9 @@
                :cljs [clojure.tools.reader.edn :as edn])
             [clojure.walk :as walk]
             [clojure.set :as set]
-            [clojure.spec.alpha :as s]
+            #?(:bb [spartan.spec :as s]
+               :clj [clojure.spec.alpha :as s]
+               :cljs [clojure.spec.alpha :as s])
             [clojure.string :as str]
             [weavejester.dependency :as dep]))
 
