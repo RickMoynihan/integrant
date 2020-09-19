@@ -1,5 +1,7 @@
 {:paths   ["src"]
  :deps    {org.clojure/clojure    {:mvn/version "1.9.0"}
+           borkdude/spartan.spec {:git/url "https://github.com/borkdude/spartan.spec"
+                                  :sha "4762f629ac2d146da2296923bb8b40fb42c69b30"}
            rickmoynihan/dependency {:git/url "https://github.com/RickMoynihan/dependency.git"
                                     :sha "6525916b513d4f97649ac372a49677c8384be900"}}
  :aliases {:dev  {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.597"}}}
