@@ -6,7 +6,7 @@ A fork of Integrant, that works with [babashka](https://github.com/borkdude/baba
 >
 > (of parts) making up or contributing to a whole; constituent.
 
-Integrant is a Clojure (and ClojureScript) micro-framework for
+This is a babashka compatible fork of the integrant micro-framework for
 building applications with data-driven architecture. It can be thought
 of as an alternative to [Component][] or [Mount][], and was inspired
 by [Arachne][] and through work on [Duct][].
